@@ -1,0 +1,27 @@
+# Diretorio local de plugins/cache do Terraform
+**/.terraform/*
+
+# Arquivos de estado - podem conter dados sensiveis
+*.tfstate
+*.tfstate.*
+
+# Logs de erro
+crash.log
+crash.*.log
+
+# Arquivos de variaveis - costumam ter dados especificos do ambiente/sensiveis
+*.tfvars
+*.tfvars.json
+
+# Arquivos de override locais
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Saida de "terraform plan -out=tfplan"
+*tfplan*
+
+# Configuracao local da CLI do Terraform
+.terraformrc
+terraform.rc
